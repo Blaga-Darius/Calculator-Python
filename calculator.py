@@ -47,8 +47,25 @@ for row in range(row_count):
 
 frame.pack()
 
+A = "0"
+operator = None
+B = None
+
 def button_clicked(value):
-    pass
+    global right_symbols, top_symbols, label, A, B, operator
+
+    if value in right_symbols:
+        pass
+    elif value in top_symbols:
+        pass
+    else:
+        if value == ".":
+            pass
+        elif value in "0123456789":
+            if label["text"] == "0":
+                label["text"] = value
+            else:
+                label["text"] += value
 
 window.update()
 window_width = window.winfo_width()
