@@ -34,6 +34,14 @@ for row in range(row_count):
     for column in range(column_count):
         value = button_values[row][column]
         button = tkinter.Button(frame, text = value, font=("Arial", 30), width=column_count-1, height=1, command=lambda value=value: button_clicked(value))
+
+        if value in top_symbols:
+            button.config(foreground=color_black, background=color_light_gray)
+        elif value in right_symbols:
+            button.config(foreground=color_white, background=color_orange)
+        else:
+            button.config(foreground=color_white, background=color_dark_gray)
+
         button.grid(row=row+1, column=column)
 
 
