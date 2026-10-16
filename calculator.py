@@ -60,7 +60,8 @@ def button_clicked(value):
         pass
     else:
         if value == ".":
-            pass
+            if value not in label["text"]:
+                label["text"] += value
         elif value in "0123456789":
             if label["text"] == "0":
                 label["text"] = value
