@@ -1,7 +1,6 @@
 # Calculator-Python
 
-I tried to recreate the calculator application found on
-platforms such as Apple, Android, and Windows using Python.
+An attempt to recreate the Calculator app found on Apple, Android, and Windows, with a focus on replicating its design, functionality, and user experience.
 
 ## Screenshot
 
